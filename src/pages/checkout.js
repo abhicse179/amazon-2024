@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Header from "../components/Header";
 import { useSelector } from "react-redux";
 import { selectItems, selectTotal } from "../slices/basketSlice";
@@ -17,11 +17,11 @@ function Checkout() {
       <main className="lg:flex max-w-screen-2xl mx-auto">
         {/* Left */}
         <div className="flex-grow m-5 shadow-sm flex flex-col">
-          <Image
+          <img
             src="http://links.papareact.com/ikj"
             width={1020}
             height={250}
-            objectFit="contain"
+            className="object-contain"
           />
           <div className="pt-5"></div>
           <div className="flex flex-col p-5 space-y-10 bg-white">
@@ -57,6 +57,7 @@ function Checkout() {
                   </span>
                 </h2>
                 <button
+                  role="link"
                   disabled={!session}
                   className={`button mt-2 ${
                     !session &&

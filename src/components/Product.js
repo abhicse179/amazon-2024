@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { useState } from "react";
 import { StarIcon } from "@heroicons/react/solid";
 import Currency from "react-currency-formatter";
@@ -36,7 +36,7 @@ function Product({ id, title, price, description, category, image }) {
         {category}
       </p>
 
-      <Image src={image} height={200} width={200} objectFit="contain" />
+      <img src={image} height={200} width={200} className="object-contain" />
 
       <h4 className="my-3">{title}</h4>
       <div className="flex">
