@@ -14,7 +14,9 @@ function Header() {
   const router = useRouter();
   const items = useSelector(selectItems);
   const signOutAndRedirect = () => {
-    signOut;
+    console.log("Inside signOutAndRedirect...");
+    signOut();
+    console.log("Redirecting to homepage ...");
     router.push("/");
   };
 
