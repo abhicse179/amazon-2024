@@ -7,4 +7,5 @@ node_modules
 .env.local
 .env.development.local
 .env.test.local
-.env.production.localpermissions.json
+.env.production.local
+permissions.json
